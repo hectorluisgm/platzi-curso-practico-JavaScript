@@ -7,9 +7,70 @@
     <title>Figuras Geometricas | Curso Practico de JavaScript</title>
 </head>
 <body>
-    <h1>
-        Figuras Geometricas
-    </h1>
-    <script src="./figuras.js"> </script>
+    <header>
+        <h1>
+            Figuras Geometricas
+        </h1>
+        <p>
+            Hola soy tu asistente matematico y te voy ayudar a calcular areas, perimetros y mas de tus figuras Geometricas
+        </p>
+    </header>
+    <section id="cuadradoCalculadora">
+        <form>
+            <label for="InputCuadrado">
+                Cuadrado
+            </label>
+            <input type="number" id="InputCuadrado">
+
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular Perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular Area
+            </button>
+        </form>
+    </section>
+    <section id="trianguloCalculadora">
+        <form >
+            <label for="InputTriangulo">Triangulo</label>
+            <input type="number" id="InputTriangulo" placeholder="Lado 1">
+            <input type="number" id="InputTrianguloLado2" placeholder="Lado 2">
+            <input type="number" id="InputTrianguloBase" placeholder="Base">
+            <input type="number" id="InputTrianguloAltura" placeholder="Altura">
+
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+                Calcular Perimetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()">
+                Calcular Area
+            </button>
+        </form>
+    </section>
+    <section id="tiposDeTriangulos">
+        <form >
+            <label for="InputTriangulo">Tipos de Triangulo</label>
+            <input type="number" id="InputTrianguloLadoA" placeholder="Lado 1">
+            <input type="number" id="InputTrianguloLadoB" placeholder="Lado 2">
+            <input type="number" id="InputTrianguloBaseX" placeholder="Base">
+
+            <button type="button" onclick="CalculadoraTrianguloIsoseles()">
+                Es este un Isoseles?
+            </button>
+        </form>
+    </section>
+    <section id="circuloCalculadora">
+        <form >
+            <label for="InputCirculo">Circulo</label>
+            <input type="number" id="InputCirculo" placeholder="Radio">
+            
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                Calcular Perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular Area
+            </button>
+        </form>
+    </section>
+        <script src="./figuras.js"> </script>
 </body>
 </html>
